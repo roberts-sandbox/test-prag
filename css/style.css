@@ -141,7 +141,7 @@ header a {
 }
 
 header nav {
-  float: right;
+  float: left;
 }
 
 header nav li {
