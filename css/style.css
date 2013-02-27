@@ -76,7 +76,7 @@ body {
 h1 {
   font-size: 2.4em;
   text-decoration: none;
-  color: #00b000;
+  color: #00b800;
   line-height: 1.2em;
   margin-bottom: .6em;
 }
@@ -90,12 +90,12 @@ h2 {
 h3 {
   font-size: 1.3em;
   margin: 2em 0 1em;
-  color: #00b000;
+  color: #00b800;
 }
 
 a {
   text-decoration: none;
-  color: #00b000;
+  color: #00b800;
 }
 
 blockquote {
