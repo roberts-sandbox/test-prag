@@ -237,7 +237,7 @@ footer  {
 
 #home {
   text-align: left;
-  background: url(/imgs/gears.png) no-repeat 0 20px;
+  /* background: url(/imgs/gears.png) no-repeat 0 20px; */
 }
 
 #home #posts {
