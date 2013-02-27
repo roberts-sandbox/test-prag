@@ -125,7 +125,7 @@ header {
 }
 
 header div {
-  width: 560px;
+  width: 700px;
   margin: 0 auto;
 }
 
@@ -163,7 +163,7 @@ header nav a:hover {
 -------------------------------------------------------------- */
 
 footer  {
-  width: 560px;
+  width: 700px;
   margin: 0 auto;
   font-size: .8em;
   font-style: italic;
@@ -177,7 +177,7 @@ footer  {
 -------------------------------------------------------------- */
 
 #content {
-  width: 560px;
+  width: 700px;
   padding: 0 40px;
   margin: 5em auto 3em;
   text-align: justify;
