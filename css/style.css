@@ -241,12 +241,12 @@ footer  {
 }
 
 #home #posts {
-  width: 240px;
+  /*width: 240px;*/
   float: left;
 }
 
 #home #intro {
-  width: 240px;
+  /*width: 240px;*/
   float: right;
   margin-bottom: 1.4em;
 }
