@@ -12,6 +12,6 @@ I am also the hardest critics of myself.  I only hope that my knowledge will con
 
 One of the smartest persons in my profession whom I really admire, [Martin Fowler](http://martinfowler.com/), once said "The word 'essay' comes from the French essayer, meaning 'to try'...writing an essay is about trying out your ideas.".  So here is where I am trying out my ideas.
 
-So go ahead and criticize me.  Better yet, correct me and help me understand.  Praising won't hurt my feelings either but is rather very welcomed.  That's what the comments box is for.
+So go ahead and criticize me.  Better yet, correct me and help me understand.  Praising won't hurt my feelings either but is rather very welcomed.  That's what the comments box below is for.
 
-Until my next post...
+Until my next post, one with real contents...
