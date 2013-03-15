@@ -10,7 +10,7 @@ I have decided to write.  I want to write because I think writing is the best wa
 
 I am also the hardest critics of myself.  I only hope that my knowledge will continue to grow which I think that's the case for everyone, no exception.  I often hear a common saying "Oh, I am too old to learn now" and I think that can never really be true.  From the moment one is born, he or she will constantly gain more knowledge and know more things.  No one can unknow what they knew.  That's my argument that everyone can learn and is learning each and every day.  The drawback from this continuous learning theory for me: a year from now, I will look back at what I am writing right now, and say "What was I thinking?".  Heck, maybe not even a year now, maybe next month.  This is another reason that has prevented from trying to write, because nothing I ever wrote ever looked perfect no matter how many revisions later.  
 
-One of the smartest persons in my profession whom I really admire, [Martin Fowler](http://martinfowler.com/), once said "The word 'essay' comes from the French essayer, meaning 'to try'...writing an essay is about trying out your ideas.".  So here is where I am trying out my ideas.
+One of the smartest persons in my profession whom I really admire, [Martin Fowler](http://martinfowler.com/), once said "The word 'essay' comes from the French essayer, meaning 'to try'...writing an essay is about trying out your ideas.".  So here I am, trying out my ideas.
 
 So go ahead and criticize me.  Better yet, correct me and help me understand.  Praising won't hurt my feelings either but is rather very welcomed.  That's what the comments box below is for.
 
