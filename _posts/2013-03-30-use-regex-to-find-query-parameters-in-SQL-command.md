@@ -7,3 +7,5 @@ I have to implement a class in the Persistence Layer.  This class contains metho
 
 Assume we are dealing with Oracle (although this concept is database agnostic), some examples of the underlying SQL statements in this Persistence Layer class are:
 
+<script src="https://gist.github.com/pragmaticlogic/5279484.js"></script>
+
