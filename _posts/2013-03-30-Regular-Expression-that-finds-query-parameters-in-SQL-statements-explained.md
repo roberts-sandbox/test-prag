@@ -13,8 +13,12 @@ Assume we are dealing with Oracle (although this concept is database agnostic), 
 
 All of the above are legal and valid SQL statements.  Let me be nice and assume that whoever suppliess these SQL statements are not sloppy, but let's just say that there are multiple people who are responsible and each has a different style.  Regardless of which style, the Regular Expression must be able to correctly handle any and all of the above.
 
-So without further due, here's the Regular Expression:
+So without further due, here's the first Regular Expression that I came up with:
 
 <script src="https://gist.github.com/pragmaticlogic/5283444.js"> </script>
+
+Unfortunately, it doesn't work in all cases.  See it [here] (http://rubular.com/r/3tQxOQ8dYV)
     
-[See it in action at rubular](http://rubular.com/r/RQx3ERmUGN)
+[See my original version in action at rubular](http://rubular.com/r/RQx3ERmUGN)
+
+[or the modified version](http://rubular.com/r/ybgtoc8UdW)
