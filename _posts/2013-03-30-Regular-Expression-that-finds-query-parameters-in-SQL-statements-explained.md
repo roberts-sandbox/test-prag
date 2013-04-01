@@ -17,4 +17,4 @@ So without further due, here's the Regular Expression:
 
 <script src="https://gist.github.com/pragmaticlogic/5283444.js"> </script>
     
-Let's look at the autopsy of the above Regular Expression.
+[See it in action at rubular](http://rubular.com/r/RQx3ERmUGN)
