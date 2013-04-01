@@ -15,8 +15,6 @@ All of the above are legal and valid SQL statements.  Let me be nice and assume 
 
 So without further due, here's the Regular Expression:
 
-    ``` ruby
-            ((?<=\s)|(?<=-)|(?<=\<)|(?<=\=)|(?<=\()):.+?(?=\b)
-    ```
+<script src="https://gist.github.com/pragmaticlogic/5283444.js"> </script>
     
 Let's look at the autopsy of the above Regular Expression.
