@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Regular Expression that finds query parameters in SQL statements explained
 published: true
 ---
