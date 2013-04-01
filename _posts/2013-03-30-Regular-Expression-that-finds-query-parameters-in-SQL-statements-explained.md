@@ -11,4 +11,10 @@ Assume we are dealing with Oracle (although this concept is database agnostic), 
 
 <script src="https://gist.github.com/pragmaticlogic/5279484.js"> </script>
 
-All of the above are legal and valid SQL statements.  The Regular Expression must be able to correctly handle any and all of the above.
+All of the above are legal and valid SQL statements.  Let me be nice and assume that whoever suppliess these SQL statements are not sloppy, but let's just say that there are multiple people who are responsible and each has a different style.  Regardless of which style, the Regular Expression must be able to correctly handle any and all of the above.
+
+So without further due, here's the Regular Expression:
+
+    ((?<=\s)|(?<=-)|(?<=\<)|(?<=\=)|(?<=\()):.+?(?=\b)
+    
+Let's look at the autopsy of the above Regular Expression.
