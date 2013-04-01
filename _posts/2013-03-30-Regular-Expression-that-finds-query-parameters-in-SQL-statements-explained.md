@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Regular Expression that finds query parameters in SQL statements explained
+tags: [regex, c#]
 published: true
 ---
 
