@@ -15,10 +15,10 @@ All of the above are legal and valid SQL statements.  Let me be nice and assume 
 
 So without further due, here's the Regular Expression:
 
-	<pre>
-  		<code class="ruby">
-    		((?<=\s)|(?<=-)|(?<=\<)|(?<=\=)|(?<=\()):.+?(?=\b)
-  		</code>
-	</pre>
+    <pre>
+        <code class="ruby">
+            ((?<=\s)|(?<=-)|(?<=\<)|(?<=\=)|(?<=\()):.+?(?=\b)
+        </code>
+    </pre>
     
 Let's look at the autopsy of the above Regular Expression.
