@@ -13,7 +13,9 @@ Assume we are dealing with Oracle (although this concept is database agnostic), 
 
 All of the above are legal and valid SQL statements.  Let me be nice and assume that whoever suppliess these SQL statements are not sloppy, but let's just say that there are multiple people who are responsible and each has a different style.  Regardless of which style, the Regular Expression must be able to correctly handle any and all of the above.
 
-So without further due, here's the first Regular Expression that I came up with:
+So without further due, here's the first Regular Expression that I came up with and I didn't expect to work:
+
+<script src="https://gist.github.com/pragmaticlogic/5292233.js"> </script>
 
 <script src="https://gist.github.com/pragmaticlogic/5283444.js"> </script>
 
