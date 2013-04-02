@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Regular Expression that finds query parameters in SQL statements explained
+title: A Journey to find a regular expression that matches query parameters in SQL statements
 tags: [regex, c#]
 published: true
 ---
