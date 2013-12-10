@@ -4,4 +4,4 @@ title: Another Post
 published: true
 ---
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+Another post to say *Hello again*.  The Markdown reference is at [Markdown Reference](http://daringfireball.net/projects/markdown/).
