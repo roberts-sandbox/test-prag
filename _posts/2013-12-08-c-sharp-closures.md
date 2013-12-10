@@ -47,44 +47,44 @@ Since the method *GetFunc()* already goes out of scope, its for loop index varia
 Now consider this code:
 
 ```csharp
-class Program
-{
-    class MyFunc
-    {
-        public Func<int> func { get; set; }
-       
-        public MyFunc(int i)
-        {
-            func = () => i;
-        }
-    }
+	class Program
+	{
+		class MyFunc
+		{
+			public Func<int> func { get; set; }
+	   
+			public MyFunc(int i)
+			{
+				func = () => i;
+			}
+		}
 
-    private static MyFunc[] GetFunc()
-    {
-        int SIZE = 5;
-        MyFunc[] myfuncs = new MyFunc[SIZE];
+		private static MyFunc[] GetFunc()
+		{
+			int SIZE = 5;
+			MyFunc[] myfuncs = new MyFunc[SIZE];
 
-        for (int i = 0; i < SIZE; i++)
-        {
-            myfuncs[i] = new MyFunc(i);
-        }
+			for (int i = 0; i < SIZE; i++)
+			{
+				myfuncs[i] = new MyFunc(i);
+			}
 
-        return myfuncs;
-    }
+			return myfuncs;
+		}
 
-    
-    public static void Main(string[] args)
-    {
-        var myfuncs = Program.GetFunc();            
+	
+		public static void Main(string[] args)
+		{
+			var myfuncs = Program.GetFunc();            
 
-        foreach (var myfunc in myfuncs)
-        {
-            Console.Out.WriteLine(myfunc.func());
-        }
+			foreach (var myfunc in myfuncs)
+			{
+				Console.Out.WriteLine(myfunc.func());
+			}
 
-        Console.ReadLine();
-    }
-}
+			Console.ReadLine();
+		}
+	}
 ```
 
 There aren't that many differences between this and the first one.  But it works as you intended.  When you run the program, 0 through 4 are written to the console.
