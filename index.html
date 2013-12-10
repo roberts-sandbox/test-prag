@@ -11,7 +11,7 @@ published: true
 	</div>
 
 	<div id="featured">
-		<h6>Newest posts</h6>
+		<h4>Newest posts</h4>
 
 		{% for post in site.posts offset: 0 limit: site.theme.homepage_featured %}
 			{% include post_featured.html %}
@@ -21,7 +21,7 @@ published: true
   	<hr />
   
 	<div id="posts">
-		<h6>Older posts</h6>
+		<h4>Older posts</h4>
 
 		<dl>
 		  {% for post in site.posts offset: site.theme.homepage_featured limit: site.theme.homepage_posts %}
