@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C# Closures
+title: Closures in C#
 ---
 
 Consider the following code:
