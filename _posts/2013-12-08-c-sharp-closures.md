@@ -46,7 +46,46 @@ Since the method *GetFunc()* already goes out of scope, its for loop index varia
 
 Now consider this code:
 
-<script src="https://gist.github.com/pragmaticlogic/7831784.js"></script>
+```csharp
+class Program
+{
+    class MyFunc
+    {
+        public Func<int> func { get; set; }
+       
+        public MyFunc(int i)
+        {
+            func = () => i;
+        }
+    }
+
+    private static MyFunc[] GetFunc()
+    {
+        int SIZE = 5;
+        MyFunc[] myfuncs = new MyFunc[SIZE];
+
+        for (int i = 0; i < SIZE; i++)
+        {
+            myfuncs[i] = new MyFunc(i);
+        }
+
+        return myfuncs;
+    }
+
+    
+    public static void Main(string[] args)
+    {
+        var myfuncs = Program.GetFunc();            
+
+        foreach (var myfunc in myfuncs)
+        {
+            Console.Out.WriteLine(myfunc.func());
+        }
+
+        Console.ReadLine();
+    }
+}
+```
 
 There aren't that many differences between this and the first one.  But it works as you intended.  When you run the program, 0 through 4 are written to the console.
 
@@ -56,7 +95,34 @@ In the second program, the lambda function does no longer bind to the loop index
 
 So this brings us back to how we can fix the fix the first program so it works as intended, i.e. like the second program but without having the define an extra class (*MyFunc*).  The answer is to define a temporary variable and and assign the loop index variable **i** to it.  It would look something like in the code below:
 
-<script src="https://gist.github.com/pragmaticlogic/7833186.js"></script>
+```csharp
+class Program
+{
+    private static Func<int>[] GetFunc()
+    {
+        int SIZE = 5;
+        Func<int>[] func = new Func<int>[SIZE];
+        for (int i = 0; i < SIZE; i++)
+        {
+            int j = i;
+            func[i] = () => j;
+        }
+        return func;
+    }
+
+    
+    public static void Main(string[] args)
+    {
+        var funcs = Program.GetFunc();
+        foreach (Func<int> func in funcs)
+        {
+            Console.Out.WriteLine(func());
+        }
+
+        Console.ReadLine();
+    }
+}
+```
 
 Each time through the loop, a separate, temporary variable **j** is created.  The lambda method instead of binding to the loop variable index **i**, it now binds to the variable **j**.  So even after the method *GetFunc()* finishes its execution, there are still 5 lambda functions that still have access to 5 separate, temporary variables **j** in their enclosing scope.  Since each copy of **j** has a different value (specifically 0 through 4), this allows the code to work correctly.  This is opposed to the first program, which the 5 lambda functions still access a single loop index variable **i** after *GetFunc()* finishes its execution (at which point the loop index variable is 5, hence that explains why 5 lines of 5 are written to the console).
 
