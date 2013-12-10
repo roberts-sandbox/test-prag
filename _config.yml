@@ -20,3 +20,6 @@ theme:
 
   # Number of words to display in post summaries
   featured_wordcount: 20
+  
+  #enable syntax highlight
+  pygments: true
