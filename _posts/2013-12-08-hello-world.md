@@ -5,7 +5,7 @@ title: Hello World
 
 This is my first post.  This is an example code:
 
-```csharp
+```
 public class Program
 {
 	private static Func<int>[] GetFunc()
