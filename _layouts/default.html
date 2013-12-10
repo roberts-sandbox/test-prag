@@ -8,7 +8,7 @@
 		<title>{{ page.title }} | {{ site.theme.site_name }}</title>
 		
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.0.2/css/foundation.min.css" />
-    	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+    		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
     
 		<script type="text/javascript">
 
@@ -62,13 +62,21 @@
 		</footer>
 		
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-    	<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.0.2/js/foundation.min.js"></script>
-    	<script>
+    		<script src="//cdnjs.cloudflare.com/ajax/libs/foundation/5.0.2/js/foundation.min.js"></script>
+    		
+    		<script src="https://raw.github.com/rstacruz/flatdoc/gh-pages/legacy.js"></script>
+    		<script src="https://raw.github.com/rstacruz/flatdoc/gh-pages/flatdoc.js"></script>
+    		
+    		<script>
       		$(document).foundation();
+      		
+      		Flatdoc.run({
+      			fetcher: Flatdoc.github('pragmaticlogic/pragmaticlogic.github.com')
+    		});
 
       		var doc = document.documentElement;
       		doc.setAttribute('data-useragent', navigator.userAgent);
-    	</script>
+    		</script>
 		
 	</body>
 </html>
