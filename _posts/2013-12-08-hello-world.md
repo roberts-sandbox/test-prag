@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Hello World
+published: true
 ---
 
 This is my first post.  This is an example code:
 
-```
+```csharp
 public class Program
 {
 	private static Func<int>[] GetFunc()
@@ -30,3 +31,4 @@ public class Program
 }
 ```
 
+That's it.
