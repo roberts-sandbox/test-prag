@@ -5,7 +5,30 @@ title: C# Closures
 
 Consider the following code:
 
-<script src="https://gist.github.com/pragmaticlogic/7819916.js"></script>
+```csharp
+public class Program
+{
+	private static Func<int>[] GetFunc()
+	{
+		int SIZE = 5;
+		Func<int>[] func = new Func<int>[SIZE];
+		for (int i = 0; i < SIZE; i++)
+		{
+			func[i] = () => i;
+		}
+		return func;
+	}
+	
+	public static void Main(string[] args)
+	{
+		var funcs = Program.GetFunc();
+		foreach (Func<int> func in funcs)
+		{
+			Console.Out.WriteLine(func());
+		}          
+	}
+}
+```
 
 The method *GetFunc()* basically returns an array of *Func* that does not accept any argument but returns an int. When this program runs, the result is 5 lines of 5 that will be written to the console.  More than likely, this is not what one would intend.  The intend is probably 0 through 4 to be written to the console.    
 
