@@ -9,7 +9,7 @@ Another post to say *Hello World again*.  The Markdown reference is at [Markdown
 
 The following is an example of Github flavored Markdown code:
 
-``` csharp
+```csharp
 public class Program
 {
 	private static Func<int>[] GetFunc()
